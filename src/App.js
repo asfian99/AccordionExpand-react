@@ -1,14 +1,12 @@
 import "./css/App.css";
+import Left from "./components/Left";
+import Right from "./components/Right";
 
 function App() {
   return (
     <article>
-      <div className="left">
-        <h1>left</h1>
-      </div>
-      <div className="right">
-        <h3>right</h3>
-      </div>
+      <Left />
+      <Right />
     </article>
   );
 }

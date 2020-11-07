@@ -1,13 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-
-// Data
+// Import Data
 import { data } from "../data";
-
-// Styled Components
-import ExpandBtn from "./StyledButton";
-import Card from "./StyledCard";
-import { Question, Answer } from "./StyledQnA";
+// Import Styled Components
+import { Button, Card, Question, Answer } from "./StyledComponents";
 
 const Wrapper = styled.div`
   height: 100%;
@@ -15,6 +11,11 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+`;
+const ExpandBtn = styled(Button)`
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
 `;
 
 const Right = () => {

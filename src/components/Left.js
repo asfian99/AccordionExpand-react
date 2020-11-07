@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   flex: 1;
 `;
 const Title = styled.p`
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
 `;
 

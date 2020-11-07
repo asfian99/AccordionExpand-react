@@ -10,7 +10,7 @@ const Container = styled.article`
   width: 70vw;
   min-height: 70vh;
   padding: 2rem;
-  margin: 15vh auto;
+  margin: 10vh auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

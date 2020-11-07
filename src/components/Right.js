@@ -24,15 +24,34 @@ const Right = () => {
       {data.map((qna) => {
         return (
           <Card key={qna.id}>
-            <Question>
-              {qna.question}
-              <ExpandBtn>+</ExpandBtn>
-            </Question>
-            <Answer>{qna.answer}</Answer>
+            <QnA {...qna} />
           </Card>
         );
       })}
     </Wrapper>
+  );
+};
+
+const QnA = (props) => {
+  const { question, answer } = props;
+  const [isShow, setIsShow] = React.useState(false);
+  const [btnSign, setBtnSign] = React.useState("+");
+
+  const expandHandler = () => {
+    if (isShow) setBtnSign("+");
+    else setBtnSign("-");
+
+    setIsShow(!isShow);
+  };
+
+  return (
+    <>
+      <Question>
+        {question}
+        <ExpandBtn onClick={expandHandler}>{btnSign}</ExpandBtn>
+      </Question>
+      {isShow ? <Answer>{answer}</Answer> : ""}
+    </>
   );
 };
 

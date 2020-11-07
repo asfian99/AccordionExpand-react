@@ -17,12 +17,13 @@ export const Button = styled.button`
 `;
 
 export const Question = styled.h4`
-  margin: 0 0 1rem;
+  /* margin: 0 0 1rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 export const Answer = styled.p`
+  margin: 0.5rem 0;
   font-size: 1rem;
   color: #405568;
 `;
